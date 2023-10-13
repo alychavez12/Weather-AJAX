@@ -1,18 +1,46 @@
-.submit {
-    font-size:15px;
-    border-radius: 8px;
+@media only screen and (max-width: 600px) {
+
+body {
+    max-width: fit-content;
+    margin: auto;
+    margin-top: auto;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.title {
+    color: rgb(7, 7, 115);
+    background-color: whitesmoke;
+    margin-bottom: 3rem;
+    text-align: center;
+    
 }
 
 .type {
-    font-size:15px; 
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    font-size: larger;
 }
 
+
+.submit {
+    font-size:16px;
+    border-radius: 5px;
+    margin-left: 1rem;
+}
 
 p {
-    font-size:20px;
+  color: rgb(252, 252, 252);
+  margin-top: 3rem;
+
 }
 
+container {
+    background-color: rgb(18, 16, 15);
+}
 
-
-
-
+html {
+    background-color: rgb(3, 3, 57);
+}
+}
