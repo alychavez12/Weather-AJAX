@@ -41,6 +41,22 @@ p {
   margin-bottom: 2rem;
 }
 
+.div-1 {
+  margin-bottom: 4rem;
+}
+
+#weather-icon-container {
+    width: 100px; /* Set the width as needed */
+    height: 100px; /* Set the height as needed */
+    background-size: contain; /* Scale the background image to fit the container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image within the container */
+    margin: 0  auto; /* Center the container horizontally */
+    text-align: center; /* Center the text in the container */
+    font-size: 50px; /* Adjust font size as needed */
+    padding: 1px; /* Add padding to space the text from the edges of the container */
+  }
+
 }
 
 @media only screen and (min-width: 601px){
@@ -71,7 +87,7 @@ body {
     border-radius: 5px;
     color: rgb(0, 0, 0);
     margin: 10px;
-    font-size: larger;
+    font-size: larger; 
 }
 
 
@@ -86,6 +102,16 @@ p {
   margin-top: 3rem;
 }
 
-
+#weather-icon-container {
+    width: 100px; /* Set the width as needed */
+    height: 100px; /* Set the height as needed */
+    background-size: contain; /* Scale the background image to fit the container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image within the container */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center the text in the container */
+    padding: 10px; /* Add padding to space the text from the edges of the container */
+  }
+ 
 
 }

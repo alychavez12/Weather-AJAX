@@ -30,10 +30,38 @@ function handleGetData(event) {
     )
   }
 
-  
+
   function render() {
-    $name.text(weatherData.name)
-    $temp.text(weatherData.main.temp)
-    $feels_like.text(weatherData.main.feels_like)
-    $weather.text(weatherData.weather[0].description)
+    $name.text(weatherData.name);
+    $temp.text(weatherData.main.temp);
+    $feels_like.text(weatherData.main.feels_like);
+    $weather.text(weatherData.weather[0].description);
+  
+    // Check if weatherData contains weather information
+    if (weatherData.weather && weatherData.weather[0] && weatherData.weather[0].icon) {
+      // Get the weather condition icon
+      const weatherIcon = weatherData.weather[0].icon;
+  
+      // Get the container element for the weather icon
+      const $weatherIconContainer = $("#weather-icon-container");
+  
+      // Construct the URL for the weather icon image
+      const iconUrl = `https://openweathermap.org/img/w/${weatherIcon}.png`;
+  
+      // Set the background image of the container with the icon URL
+      $weatherIconContainer.css("background-image", `url(${iconUrl})`);
+    } else {
+      // If there's no weather data, clear the background image of the container
+      const $weatherIconContainer = $("#weather-icon-container");
+      $weatherIconContainer.css("background-image", "none");
+    }
   }
+  
+  
+   
+
+  
+  
+  
+  
+  
